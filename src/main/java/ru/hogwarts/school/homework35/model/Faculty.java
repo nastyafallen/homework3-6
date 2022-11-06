@@ -11,7 +11,7 @@ import java.util.Set;
 @Entity
 public class Faculty {
     @Id
-    @GeneratedValue
+    //@GeneratedValue
     private Long id;
 
     private String name;

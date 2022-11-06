@@ -8,7 +8,7 @@ import java.util.Objects;
 @Entity
 public class Student {
     @Id
-    @GeneratedValue
+    //@GeneratedValue
     private Long id;
     private String name;
     private int age;
@@ -31,6 +31,10 @@ public class Student {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -59,6 +63,10 @@ public class Student {
 
     public Avatar getAvatar() {
         return avatar;
+    }
+
+    public void setAvatar(Avatar avatar) {
+        this.avatar = avatar;
     }
 
     @Override
